@@ -1,2 +1,2 @@
 # libft
-## the fist project in 1337 school
+## My first project in 1337 school.
