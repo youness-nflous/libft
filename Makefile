@@ -4,7 +4,7 @@ CCFLAGS = -Wall -Wextra -Werror
 
 NAME = libft.a
 
-SRC = #file name.c
+SRC = ft_atoi.c
 
 OBJ = $(SRC:.c=.o)
 
