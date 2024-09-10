@@ -15,7 +15,7 @@ $(NAME): $(OBJ)
 	$(CC) $(CCFLAGS) -o $(NAME) $(OBJ)
 
 %.o: %.c
-	$(CC) $(CCFLAGS) -c $< -o $@
+	ar rc $(NAME) $(OBJ)
 
 clean:
 	rm -f $(OBJ)
