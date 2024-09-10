@@ -2,7 +2,7 @@ CC = gcc
 
 CCFLAGS = -Wall -Wextra -Werror
 
-NAME = program
+NAME = libft.a
 
 SRC = #file name.c
 
