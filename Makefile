@@ -4,7 +4,7 @@ CCFLAGS = -Wall -Wextra -Werror
 
 NAME = libft.a
 
-SRC = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_atoi.c
+SRC = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_atoi.c ft_strlen.c
 
 OBJ = $(SRC:.c=.o)
 
