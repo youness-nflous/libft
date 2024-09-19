@@ -14,5 +14,6 @@ void	*ft_memset(void *str, int c, size_t n);
 void	ft_bzero(void *dst, size_t n);
 void 	*ft_memcpy(void *s1, const void *s2, size_t n);
 size_t  ft_strlcpy(char *dst, const char *src, size_t n);
+size_t	ft_strlcat(char *dst, const char *src, size_t size);
 
 # endif
