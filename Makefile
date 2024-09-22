@@ -19,6 +19,8 @@ SRC = ft_isalpha.c\
       ft_toupper.c\
       ft_tolower.c\
       ft_strchar.c\
+      ft_strrchar.c\
+      ft_strncmp.c\
       ft_atoi.c\
 
 
