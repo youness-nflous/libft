@@ -21,7 +21,9 @@ SRC = ft_isalpha.c\
       ft_strchar.c\
       ft_strrchar.c\
       ft_strncmp.c\
+      ft_memchr.c\
       ft_atoi.c\
+      ft_lstnew_bonus.c\
 
 
 OBJ = $(SRC:.c=.o)
