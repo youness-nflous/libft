@@ -22,6 +22,7 @@ SRC = ft_isalpha.c\
       ft_strrchar.c\
       ft_strncmp.c\
       ft_memchr.c\
+      ft_memcmp.c\
       ft_atoi.c\
       ft_lstnew_bonus.c\
 
