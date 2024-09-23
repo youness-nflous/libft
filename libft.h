@@ -3,7 +3,7 @@
 
 #include <stdlib.h>
 
-int	ft_itoa(char *str);
+
 int	ft_isalpha(int c);
 int	ft_isdigit(int c);
 int	ft_isalnum(int c);
@@ -21,7 +21,9 @@ char	*ft_strchar(const char *str, int c);
 char	*ft_strrchar(const char *str, int c);
 int	ft_strncmp(const char *str1, const char *str2, size_t n);
 void	*ft_memchr(const void *str, int c, size_t n);
+int	ft_memcmp(const void *str1, const void *str2, size_t n);
 
+int	ft_atoi(char *str);
 typedef	struct s_list
 {
 	void *content;
