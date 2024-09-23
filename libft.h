@@ -20,5 +20,14 @@ int	ft_tolower(int c);
 char	*ft_strchar(const char *str, int c);
 char	*ft_strrchar(const char *str, int c);
 int	ft_strncmp(const char *str1, const char *str2, size_t n);
+void	*ft_memchr(const void *str, int c, size_t n);
+
+typedef	struct s_list
+{
+	void *content;
+	struct s_list *next;
+}t_list;
+
+t_list	*ft_lstnew(void *content);
 
 # endif
