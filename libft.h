@@ -22,7 +22,7 @@ char	*ft_strrchar(const char *str, int c);
 int	ft_strncmp(const char *str1, const char *str2, size_t n);
 void	*ft_memchr(const void *str, int c, size_t n);
 int	ft_memcmp(const void *str1, const void *str2, size_t n);
-
+char	*ft_strnstr(const char *str, const char *to_find, size_t n);
 int	ft_atoi(char *str);
 typedef	struct s_list
 {
