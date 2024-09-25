@@ -25,6 +25,8 @@ int	ft_memcmp(const void *str1, const void *str2, size_t n);
 char	*ft_strnstr(const char *str, const char *to_find, size_t n);
 int	ft_atoi(const char *str);
 
+char	*ft_substr(const char *str, unsigned int start, size_t len);
+
 typedef	struct s_list
 {
 	void *content;
