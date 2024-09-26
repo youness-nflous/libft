@@ -2,8 +2,10 @@
 # define LIBFT_H
 
 #include <stdlib.h>
+// <stdio.h> just for the test.
+#include <stdio.h>
 
-
+// Libc functions
 int	ft_isalpha(int c);
 int	ft_isdigit(int c);
 int	ft_isalnum(int c);
@@ -27,7 +29,9 @@ int	ft_atoi(const char *str);
 void	*ft_calloc(size_t nitems, size_t size);
 char	*ft_strdup(const char *str);
 
+// additional functions
 char	*ft_substr(const char *str, unsigned int start, size_t len);
+char	*ft_strjoin(const char *s1, const char *s2);
 
 typedef	struct s_list
 {
