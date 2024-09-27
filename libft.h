@@ -28,10 +28,10 @@ char	*ft_strnstr(const char *str, const char *to_find, size_t n);
 int	ft_atoi(const char *str);
 void	*ft_calloc(size_t nitems, size_t size);
 char	*ft_strdup(const char *str);
-
 // additional functions
 char	*ft_substr(const char *str, unsigned int start, size_t len);
 char	*ft_strjoin(const char *s1, const char *s2);
+char	*ft_strtrim(const char *str, const char *set);
 
 typedef	struct s_list
 {
