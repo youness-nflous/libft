@@ -33,6 +33,7 @@ char	*ft_substr(const char *str, unsigned int start, size_t len);
 char	*ft_strjoin(const char *s1, const char *s2);
 char	*ft_strtrim(const char *str, const char *set);
 
+// bonus part
 typedef	struct s_list
 {
 	void *content;
@@ -40,5 +41,7 @@ typedef	struct s_list
 }t_list;
 
 t_list	*ft_lstnew(void *content);
+void	ft_lstadd_front(t_list **lst, t_list *new);
+
 
 # endif
