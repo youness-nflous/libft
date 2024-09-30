@@ -32,6 +32,7 @@ SRC = ft_isalpha.c\
       ft_strtrim.c\
       ft_lstnew_bonus.c\
       ft_lstadd_front_bonus.c\
+      ft_lstsize_bonus\
 
 
 OBJ = $(SRC:.c=.o)
