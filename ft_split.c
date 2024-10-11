@@ -71,10 +71,11 @@ char	**ft_split(const char *s, char c)
 			while (i > 0)
 				free(arry[--i]);
 			free(arry);
+			return (NULL);
 		}
 		i++;
 	}
-	arry[i] = '\0';
+	arry[i] = NULL;
 	return (arry);
 }
 
