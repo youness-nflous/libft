@@ -1,76 +1,71 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//count_word;
-static int count_word(const char *str, char c)
+static	int count_word(const char *s, char c)
 {
 	int count;
 	int i;
 
 	count = 0;
 	i = 0;
-	while (str[i])
+
+	while (s[i])
 	{
-		while (str[i] == c)
+		while (s[i] == c)
 			i++;
-		if (str[i])
+		if (s[i])
 			count++;
-		while (str[i] && str[i] != c)
+		while (s[i] && s[i] != c)
 			i++;
 	}
 	return (count);
 }
 
-//get_next_word;
-static char *get_next_word(const char *str, char c, int *index)
+static char *get_next_word(const char *s, char c, int *index)
 {
 	int start;
-	char *word;
 	int length;
 	int i;
+	char *word;
 
 	start = *index;
+
+	while (s[start] && s[start] == c)
+		start++;
+	*index = start;
 	length = 0;
 
-	while (str[start] && str[start] == c)
-		start++;
-
-	*index = start;
-
-	while (str[*index] && str[*index] != c)
+	while (s[*index] && s[*index] != c)
 	{
 		length++;
 		(*index)++;
 	}
-
+	i = 0;
 	word = malloc(sizeof(char) * (length + 1));
 	if (!word)
 		return (NULL);
-	i = 0;
 	while (i < length)
-		word[i++] = str[start++];
+		word[i++] = s[start++];
 	word[i] = '\0';
 	return (word);
 }
 
-
-//split;
-char	**ft_split(const char *str, char c)
+char	**ft_split(const char *s, char c)
 {
+	int index;
 	char **arry;
 	int count;
-	int index;
 	int i;
-	
-	count = count_word(str, c);
+
+	index = 0;
+	count = count_word(s, c);
 	arry = malloc(sizeof(char *) * (count + 1));
 	if (!arry)
 		return (NULL);
 	i = 0;
-	index = 0;
 	while (i < count)
 	{
-		arry[i] = get_next_word(str, c, &index);
+		arry[i] = get_next_word(s, c, &index);
 		if (!arry[i])
 		{
 			while (i > 0)
@@ -83,13 +78,14 @@ char	**ft_split(const char *str, char c)
 	return (arry);
 }
 
-int	main()
-{
-	char str[] = "hello youness is me!!";
-	char **arry = ft_split(str, ' ');
-	int i;
 
-	i = 0;
+int 	main()
+{
+	char str[] = "youness is hear";
+	int i = 0;
+
+	char **arry = ft_split(str, ' ');
+
 	while (arry[i])
 	{
 		printf("%s", arry[i]);
@@ -97,3 +93,18 @@ int	main()
 	}
 	return (0);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
